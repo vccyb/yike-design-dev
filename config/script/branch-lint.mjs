@@ -26,7 +26,7 @@ localRun(args.current, args.target).then(() => process.exit(0))
 
 
 async function localRun(current, target) {
-  await invoke('git fetch --all')
+  // await invoke('git fetch --all')
   await sharedRun(current, target)
   await extraMergeCheck(current, target)
 }
